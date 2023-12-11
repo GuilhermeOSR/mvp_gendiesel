@@ -1,5 +1,5 @@
 # Gendiesel 
-![Mockup](mockup.jpg)
+![Mockup](mock-up.jpg)
 
 Descrição breve do projeto aqui.
 
