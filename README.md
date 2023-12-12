@@ -1,7 +1,12 @@
 # Gendiesel 
+
 ![Mockup](mock-up.jpg)
 
-Descrição breve do projeto aqui.
+O Gendiesel é um site dedicado a fornecer soluções de energia confiáveis e sustentáveis para residências e empresas. Com foco em serviços de instalação manutenção em geradores.
+
+## Protótipo
+![Protótipo](./public/imagemprototipocerta.png)
+Confira o [protótipo no Adobe XD](./public/imagemprototipocerta.png).
 
 ## Instruções de Instalação
 

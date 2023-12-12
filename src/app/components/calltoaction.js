@@ -1,3 +1,5 @@
+// Componente Call to Action da Página Principal
+
 import React from 'react';
 import ContactButton from './btnContact';
 

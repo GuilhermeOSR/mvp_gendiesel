@@ -1,5 +1,7 @@
+// Componente Content da Página Principal
 import React from 'react';
 
+// Componente Feature: Representa uma feature na seção de conteúdo
 const Feature = ({ title, description, icon }) => (
   <div className="flex flex-col items-center w-7xl text-white text-center hover:bg-zinc-700 p-4 m-4 rounded-md transition duration-200 ease-in-out transform hover:scale-105">
     {icon}
@@ -13,6 +15,7 @@ const Content = () => {
     <div className="bg-zinc-800 flex ">
       <div className="max-w-full mx-auto px-4 relative">
         <div className="flex flex-col sm:flex-row justify-center items-center h-full">
+          {/* Renderiza quatro instâncias do componente Feature, cada uma representando uma feature */}
           <Feature
             title="Geração de Energia Renovável"
             description="Utilizamos tecnologias sustentáveis para gerar energia limpa e renovável."

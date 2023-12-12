@@ -1,3 +1,5 @@
+// Página de Marcas
+
 "use client"
 
 import { useState, useEffect } from 'react';

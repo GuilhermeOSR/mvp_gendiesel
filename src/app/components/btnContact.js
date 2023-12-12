@@ -1,3 +1,5 @@
+// Componente de Botão "Entre em Contato"
+
 import React from "react";
 import Link from 'next/link';
 

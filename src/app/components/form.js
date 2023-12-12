@@ -1,7 +1,9 @@
+// Componente Form para Formulário da Página de Contato
+
 export default function Form() {
 
     return(
-        <form className="relative max-w-2xl bg-zinc-700 p-10 mx-4 shadow-xl rounded-md " autocomplete="off">
+        <form className="relative max-w-2xl bg-zinc-700 p-10 mx-4 shadow-xl rounded-md" autocomplete="off">
           <div className="mb-6 relative">
             <label htmlFor="name" className="block text-sm font-medium text-zinc-500 ">
               Nome

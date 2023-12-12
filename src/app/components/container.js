@@ -1,9 +1,12 @@
+// Componente de Container da Página Principal
+
 "use client"
 import React, { useState, useEffect } from 'react';
 import ContactButton from './btnContact';
 
 export default function Container() {
 
+  // Componente dos ícones de seta para navegar pelos slides
   const ArrowIcon = ({ direction }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +24,7 @@ export default function Container() {
       />
     </svg>
   );
-
+  // Dados dos slides
   const slides = [
     {
       title: 'Projetos Residenciais',
@@ -49,21 +52,23 @@ export default function Container() {
         'Práticas sustentáveis ao fornecer soluções de energia eficientes. Desde a escolha de equipamentos energeticamente eficientes até a implementação de fontes de energia renovável, ajudamos sua empresa a alcançar objetivos ambientais.',
     },
   ];
-
+  // Estado para rastrear o slide atual
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Função para avançar para o próximo slide
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
   };
-
+  // Função para voltar para o slide anterior
   const prevSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
   };
-
+  // useEffect que avança automaticamente para o próximo slide a cada 5 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 5000);
+    // Limpa o intervalo quando o componente é desmontado ou o slide atual muda
     return () => clearInterval(interval);
   }, [currentSlide]);
 
@@ -71,12 +76,14 @@ export default function Container() {
     <div className="max-w-full px-6 py-20 z-10">
       <div className="max-w-full py-36 ">
         <div className="controller flex justify-between relative">
+          {/* Botão para navegar para o slide anterior */}
           <button
             onClick={prevSlide}
             className="text-xl  left transition duration-300 ease-in-out transform w-6/6 p-5 my-5 font-black text-white sm-w-full absolute left-0 hidden md:flex"
           >
             <ArrowIcon direction="left" />
           </button>
+          {/* Conteúdo do slide atual */}
           <div className="carroussel  container mx-auto flex flex-col justify-center items-center mb-12">
             <h1 className="text-5xl sm:text-5xl font-semibold text-white mb-8 sm:mb-8 text-center">
               {slides[currentSlide].title}
@@ -86,7 +93,7 @@ export default function Container() {
             </p>
            <ContactButton />
           </div>
-
+          {/* Botão para navegar para o próximo slide */}
           <button
             onClick={nextSlide}
             className="text-xl  transition duration-300 ease-in-out transform w-6/6 bg-transparent p-5 my-5  font-black text-white sm-w-full absolute right-0 hidden md:flex"
@@ -94,6 +101,7 @@ export default function Container() {
             <ArrowIcon direction="right" />
           </button>
         </div>
+        {/* Indicadores de slide na parte inferior */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
         <div className="relative gap-4 flex">
           {slides.map((_, index) => (
