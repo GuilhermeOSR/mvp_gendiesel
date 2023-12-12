@@ -1,6 +1,6 @@
 # Gendiesel 
 
-![Mockup](mock-up.jpg)
+![Mockup](mock-up.png)
 
 O Gendiesel é um site dedicado a fornecer soluções de energia confiáveis e sustentáveis para residências e empresas. Com foco em serviços de instalação manutenção em geradores.
 
