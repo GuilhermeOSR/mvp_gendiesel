@@ -5,7 +5,7 @@
 O Gendiesel é um site dedicado a fornecer soluções de energia confiáveis e sustentáveis para residências e empresas. Com foco em serviços de instalação manutenção em geradores.
 
 ## Protótipo
-Confira o [protótipo no Adobe XD](./public/imagemprototipocerta.png).
+Confira o [protótipo no Adobe XD](https://xd.adobe.com/view/53266988-65bc-4487-9be1-6d502bd0fd24-0675/).
 
 ## Instruções de Instalação
 
